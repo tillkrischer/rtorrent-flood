@@ -1,0 +1,4 @@
+directory = /data/
+session = /rtorrent-session/
+port_range = 6881-6881
+scgi_local = /tmp/rtorrent.sock
