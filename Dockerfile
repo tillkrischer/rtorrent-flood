@@ -22,5 +22,6 @@ EXPOSE 6881
 VOLUME /data
 VOLUME /flood-db
 VOLUME /rtorrent-session
+VOLUME /rtorrent-watch
 
 CMD [ "/usr/bin/supervisord", "-n", "-c", "/supervisord.conf" ]
