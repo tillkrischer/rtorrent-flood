@@ -1,6 +1,9 @@
-`docker build -t flood .`
+```bash
+docker build -t flood .
+```
 
-`docker run \
+```bash
+docker run \
   --restart=unless-stopped \
   -d \
   -u $UID:$UID \
@@ -9,4 +12,5 @@
   -v /home/till/Downloads:/data \
   -v /home/till/.flood/flood-db:/flood-db 
   -v /home/till/.flood/rtorrent:/rtorrent-config \
-  flood:latest`
+  flood:latest
+  ```
