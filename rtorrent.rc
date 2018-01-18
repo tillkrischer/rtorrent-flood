@@ -54,7 +54,7 @@ network.xmlrpc.size_limit.set = 4M
 # Basic operational settings (no need to change these)
 session.path.set = (cat, (cfg.basedir), ".session/")
 # directory.default.set = (cat, (cfg.basedir), "download/")
-# directory.default.set = "/data/"
+directory.default.set = "/data/"
 log.execute = (cat, (cfg.logs), "execute.log")
 ##log.xmlrpc = (cat, (cfg.logs), "xmlrpc.log")
 execute.nothrow = bash, -c, (cat, "echo >",\
