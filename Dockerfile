@@ -16,12 +16,12 @@ WORKDIR /
 
 COPY supervisord.conf /supervisord.conf
 COPY rtorrent.rc /rtorrent.rc
+COPY launch.sh /launch.sh
 
 EXPOSE 3000
 EXPOSE 6881
 VOLUME /data
 VOLUME /flood-db
-VOLUME /rtorrent-session
-VOLUME /rtorrent-watch
+VOLUME /rtorrent-config
 
-CMD [ "/usr/bin/supervisord", "-n", "-c", "/supervisord.conf" ]
+CMD [ "bash", "/launch.sh" ]
